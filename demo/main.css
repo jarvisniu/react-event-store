@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  border: solid 1px silver;
+  border-radius: 5px;
+}
+
+.product {
+  flex: 1;
+  padding: 8px;
+  background-color: #fffff0;
+}
+
+.cart {
+  width: 300px;
+  border-left: solid 1px silver;
+  padding: 8px;
+  background-color: #f0ffff;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+
+  button {
+    padding: 4px 8px;
+  }
+}
