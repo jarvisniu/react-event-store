@@ -1,6 +1,6 @@
 {
   "name": "react-event-store",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "src/index.ts",
   "module": "src/index.ts",
@@ -35,7 +35,7 @@
     "vite": "^5.0.10"
   },
   "files": [
-    "src/**/*",
-    "dist/**/*"
+    "src",
+    "dist"
   ]
 }

@@ -2,6 +2,8 @@
 
 Simplified, typed, centralized event management for React
 
+[Demo](https://unpkg.com/react-event-store/dist/index.html)
+
 ## Usage
 
 Firstly, define your events.
@@ -10,7 +12,7 @@ Firstly, define your events.
 
 ```tsx
 // eventStore.ts
-import { createEvent } from '../react-event-store'
+import { createEvent } from 'react-event-store'
 
 export default {
   count: {
@@ -24,9 +26,9 @@ export default {
 }
 ```
 
-Then, use `` hook listen to the events.
+Then, use `useEvent` hook listen to the events.
 
-> The listeners will be automatically removed on unmount.
+> The listener will be automatically removed on unmount.
 
 ```tsx
 import { useEvent } from 'react-event-store'
@@ -55,7 +57,7 @@ return <button onClick={() => eventStore.count.add(5)}> +5 </button>
 
 ## Advanced usage
 
-If your event handlers reads some React states, you can use `on/off` manually.
+If your event handlers need to read React states, you can use `on/off` manually.
 
 ```tsx
 React.useEffect(() => {
@@ -70,7 +72,7 @@ React.useEffect(() => {
 })
 ```
 
-This is a little bit redundant, so I recommend to use signals.
+This is a little bit redundant, so it may be better to use signals instead.
 
 `npm install @preact/signals-react@1.3.8`
 
